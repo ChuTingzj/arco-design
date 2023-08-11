@@ -154,7 +154,7 @@ function Image(baseProps: ImagePropsType, ref: LegacyRef<HTMLDivElement>) {
     if (!previewGroup) return;
     const unRegister = registerPreviewProps(id, availablePreviewProps);
     return () => unRegister(id);
-  }, [id, previewGroup, JSON.stringify(availablePreviewProps)]);
+  }, [id, previewGroup, availablePreviewProps]);
 
   useEffect(() => {
     if (!previewGroup) return;
